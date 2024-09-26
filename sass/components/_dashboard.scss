@@ -1,0 +1,232 @@
+
+.dashboard-section {
+    padding-top: 41px; 
+    box-sizing: border-box;
+    margin-left: 0 auto;
+    @media screen and (min-width: 1199px) {
+        margin-left: 379px;
+    }
+}
+
+.dashbord-wrapper {
+    margin: 0 auto;
+        box-sizing: border-box;
+        max-width: 968px;
+        /* height: 812px; */
+        background-color: var(--white);
+        padding-top: 30px;
+        padding-right: 44px;
+        padding-left: 38px;
+        padding-bottom: 41px;
+}
+
+.dashboard-body {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+    overflow-x: hidden;
+        
+    }
+}
+
+/* .dashboard-body__table {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 40px;
+    border-collapse: separate;
+}
+
+th, td {
+    white-space: nowrap;
+} */
+
+.dashboard-body__table {
+    border-collapse: collapse; /* Сжимаем границы таблицы */
+    width: 100%;
+    font-size: 14px;
+}
+
+.dashboard-body__table th,
+.dashboard-body__table td {
+    padding: 20px; /* Устанавливаем внутренний отступ для всех ячеек */
+}
+
+/* Убираем padding для первой колонки */
+.dashboard-body__table th:first-child,
+.dashboard-body__table td:first-child {
+    padding-left: 0;
+}
+
+/* Убираем padding для последней колонки */
+.dashboard-body__table th:last-child,
+.dashboard-body__table td:last-child {
+    padding-right: 0;
+}
+
+/* Убираем padding для первой строки */
+.dashboard-body__table tr:first-child th,
+.dashboard-body__table tr:first-child td {
+    padding-top: 0;
+}
+
+/* Убираем padding для последней строки */
+.dashboard-body__table tr:last-child th,
+.dashboard-body__table tr:last-child td {
+    padding-bottom: 0;
+}
+
+
+.dashboard-body__item {
+    text-align: left;
+} 
+
+.dashboard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-bottom: 40px;
+    gap: 20px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    
+}
+
+.dashboard-header__title-wrapper {
+    font-family: "Poppins";
+}
+
+.dashboard-header__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.dashboard-header__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--table-font-color-subtitle);
+}
+
+.dashboard-header__input-wrapper {
+    color: var(--dashboard-input-wrapper);
+    position: relative;
+
+}
+
+.dashboard-header__input {
+    box-sizing: border-box;
+    max-width: 216px;
+    height: 38px;
+    border-radius: 10px;
+    padding-left: 40px;
+    border: none;
+}
+
+.dashboard-header__input::placeholder {
+    font-family: "Poppins";
+    font-size: 12px;
+    color: var(--table-font-color-accent);
+}   
+
+.icon-search {
+    position: absolute;
+    z-index: 2;
+    top: 7px;
+    left: 10px;
+}
+
+
+.dashboard-body__item--accent {
+    color: var(--table-font-color-accent);
+    font-weight: 500;
+
+}
+
+.status-button {
+    padding: 0;
+    height: 30px;
+    width: 80px;
+    background-color: var(--status-button-active);
+    border: 1px solid var(--status-button-border-active);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.status-button--disable {
+    height: 30px;
+    width: 80px;
+    background-color: var(--status-button-inactive);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid var(--status-button-border-inactive);
+    color: var(--status-button-border-inactive);
+}
+
+.title {
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-left: 80px;
+} 
+
+.dashboard-footer {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    align-items: center;
+    gap: 16px;
+
+    @media screen and (min-width: 767px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+    }
+}
+
+.dashboard-footer__text {
+    font-size: 14px;
+    color: var(--table-font-color-accent);
+}
+
+.pagination__item {
+    width: 25px;
+    height: 25px;
+    background-color: var(--pag-inactive);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination__item--active {
+    width: 25px;
+    height: 25px;
+    background-color: var(--accent-button);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.dashboard-footer__pagination {
+    display: flex;
+    gap: 12px;
+}
+
+.pagination__item-text {
+    font-size: 12px;
+}

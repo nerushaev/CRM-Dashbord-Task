@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/sass/index.css" ></link>
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <button class="menu-button visually-hidden">Menu</button>
+        <div class="side-menu">
+            <button class="close-button visually-hidden" >X</button>
+        <ul class="side-menu__list">
+            <div class="side-menu__logo-wrapper">
+                <div class="side-menu__logo">
+                
+                    <svg class="icon" width="37" height="37">
+                        <use href="/index.svg#icon-logo"></use>
+                      </svg>
+                        <h1 class="side-menu__logo-title">Dashboard</h1>
+                        
+                    </div> 
+                    <p class="side-menu__logo-text">v.01</p>
+            </div> 
+            <li class="side-menu__item">
+                <a class="side-menu__link">
+                    <svg class="icon" width="24" height="24">
+                        <use href="/index.svg#icon-key-square"></use>
+                    </svg>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li class="side-menu__item">
+                <a class="side-menu__link">
+                    <svg class="icon" width="24" height="24">
+                        <use href="/index.svg#icon-d-square"></use>
+                    </svg>
+                    <p>Product</p>
+                </a>
+                <svg class="icon" width="16" height="16">
+                    <use href="/index.svg#icon-chevron-right"></use>
+                </svg>
+            </li>
+            <li class="side-menu__item side-menu__item--active">
+                <a class="side-menu__link side-menu__link--active">
+                <svg class="icon" width="24" height="24">
+                        <use href="/index.svg#icon-user-square"></use>
+                    </svg>
+                    <p>Customers</p>
+                </a>
+                <div class="icon--active">
+                    <svg class="icon" width="16" height="16">
+                        <use href="/index.svg#icon-chevron-right"></use>
+                    </svg>
+                </div>
+            </li>
+            <li class="side-menu__item">
+                <a class="side-menu__link">
+                <svg class="icon" width="24" height="24">
+                        <use href="/index.svg#icon-wallet-money"></use>
+                    </svg>
+                    <p>Income</p>
+                </a>
+                <svg class="icon" width="16" height="16">
+                    <use href="/index.svg#icon-chevron-right"></use>
+                </svg>
+            </li>
+            <li class="side-menu__item">
+                <a class="side-menu__link">
+                <svg class="icon" width="24" height="24">
+                        <use href="/index.svg#icon-discount-shape"></use>
+                    </svg>
+                    <p>Promote</p>
+                </a>
+                <svg class="icon" width="16" height="16">
+                    <use href="/index.svg#icon-chevron-right"></use>
+                </svg>
+            </li>
+            <li class="side-menu__item">
+                <a class="side-menu__link">
+                <svg class="icon" width="24" height="24">
+                        <use href="/index.svg#icon-message-question"></use>
+                    </svg>
+                    <p>Help</p>
+                </a>
+                <svg class="icon" width="16" height="16">
+                    <use href="/index.svg#icon-chevron-right"></use>
+                </svg>
+            </li>
+        </ul>
+        <div class="user-card">
+            <div class="user-card__avatar-wrapper">
+                <img src="/assets/avatar.png" alt="">
+            </div>
+            <div class="user-card__text">
+                <h3 class="user-card__name">Evano</h3>
+                <p class="user-card__role">Project Manager</p>
+            </div>
+        </div>
+        </div>
+        <div class="dashboard-section --desktop">
+            <h1 class="title">
+                Hello Evano 👋🏼,
+            </h1>
+            <div class="dashbord-wrapper">
+                <div class="dashboard-header">
+                    <div class="dashboard-header__title-wrapper">
+                        <h2 class="dashboard-header__title">All Customers</h2>
+                        <p class="dashboard-header__subtitle">Active Members</p>
+                    </div>
+                    
+                    <div class="dashboard-header__input-wrapper">
+                        <svg class="icon icon-search" width="24" height="24">
+                            <use href="/index.svg#icon-search"></use>
+                        </svg>
+                        <input placeholder="Search" type="text" class="dashboard-header__input" />
+                    </div>
+                    
+                </div>
+                <div class="dashboard-body">
+                    <table class="dashboard-body__table">
+                        <tr class="dashboard-body__item">
+                            <th class="dashboard-body__item--accent">Customer Name</th>
+                            <th class="dashboard-body__item--accent">Company</th>
+                            <th class="dashboard-body__item--accent">Phone Number</th>
+                            <th class="dashboard-body__item--accent">Email</th>
+                            <th class="dashboard-body__item--accent">Country</th>
+                            <th class="dashboard-body__item--accent">Status</th>
+                        </tr>
+                        <tr class="dashboard-body__item">
+                            <td>Jane Cooper</td>
+                            <td>Microsoft</td>
+                            <td>(225) 555-0118</td>
+                            <td>jane@microsoft.com</td>
+                            <td>United States</td>
+                            <td >
+                                <span class="status-button">Active</span>
+                                </td>
+                        </tr>
+                        <tr class="dashboard-body__item">
+                            <td>Floyd Miles</td>
+                            <td>Yahoo</td>
+                            <td>(205) 555-0100</td>
+                            <td>floyd@yahoo.com</td>
+                            <td>Kiribati</td>
+                            <td >
+                                <span class="status-button--disable">Inactive</span>
+                                </td>
+                        </tr>
+                        <tr class="dashboard-body__item">
+                            <td>Ronald Richards</td>
+                            <td>Adobe</td>
+                            <td>(302) 555-0107</td>
+                            <td>ronald@adobe.com</td>
+                            <td>Israel</td>
+                            <td >
+                                <span class="status-button--disable">Inactive</span>
+                                </td>
+                        </tr>
+                        <tr class="dashboard-body__item">
+                            <td>Marvin McKinney</td>
+                            <td>Tesla</td>
+                            <td>(252) 555-0126</td>
+                            <td>marvin@tesla.com</td>
+                            <td>Iran</td>
+                            <td >
+                                <span class="status-button">Active</span>
+                                </td>
+                        </tr>
+                        <tr class="dashboard-body__item">
+                            <td>Jerome Bell</td>
+                            <td>Google</td>
+                            <td>(629) 555-0129</td>
+                            <td>jerome@google.com</td>
+                            <td>Réunion</td>
+                            <td >
+                                <span class="status-button">Active</span>
+                                </td>
+                        </tr>
+                        <tr class="dashboard-body__item">
+                            <td>Kathryn Murphy</td>
+                            <td>Microsoft</td>
+                            <td>(406) 555-0120</td>
+                            <td>kathryn@microsoft.com</td>
+                            <td>Curaçao</td>
+                            <td >
+                                <span class="status-button">Active</span>
+                                </td>
+                        </tr>
+                        <tr class="dashboard-body__item">
+                            <td>Jacob Jones</td>
+                            <td>Yahoo</td>
+                            <td>(208) 555-0112</td>
+                            <td>jacob@yahoo.com</td>
+                            <td>Brazil</td>
+                            <td >
+                                <span class="status-button">Active</span>
+                                </td>
+                        </tr>
+                        <tr class="dashboard-body__item">
+                            <td>Kristin Watson</td>
+                            <td>Facebook</td>
+                            <td>(704) 555-0127</td>
+                            <td>kristin@facebook.com</td>
+                            <td>Åland Islands</td>
+                            <td >
+                                <span class="status-button--disable">Inactive</span>
+                                </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="dashboard-footer">
+                    <div class="dashboard-footer__text-wrapper">
+                        <p class="dashboard-footer__text">Showing data 1 to 8 of  256K entries</p>
+                    </div>
+                    <ul class="dashboard-footer__pagination">
+                        <li class="pagination__item">
+                            <p class="pagination__item-text"><</p>
+                        </li>
+                        <li class="pagination__item--active">
+                            <p class="pagination__item-text">1</p>
+                        </li>
+                        <li class="pagination__item">
+                            <p class="pagination__item-text">2</p>
+                        </li>
+                        <li class="pagination__item">
+                            <p class="pagination__item-text">3</p>
+                        </li>
+                        <li class="pagination__item">
+                            <p class="pagination__item-text">4</p>
+                        </li>
+                        <li class="pagination__item">
+                            <p class="pagination__item-text">...</p>
+                        </li>
+                        <li class="pagination__item">
+                            <p class="pagination__item-text">40</p>
+                        </li>
+                        <li class="pagination__item">></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+        
+</body>
+<script src="/js/sideMenu.js"></script>
+</html>

@@ -1,0 +1,25 @@
+.menu-button {
+    font-size: 15px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background-color: var(--menu-button-background);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.close-button {
+    font-size: 15px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background-color: var(--status-button-inactive);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
